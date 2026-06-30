@@ -9,8 +9,11 @@ public class WeatherService {
     private final WebClient webClient = WebClient.create("https://api.open-meteo.com");
 
     // Brussels coordinates
-    private static final double LAT = 50.8503;
-    private static final double LON = 4.3517;
+    // private static final double LAT = 50.8503;
+    // private static final double LON = 4.3517;
+    // Kastoria coordinates
+    private static final double LAT = 40.519715;
+    private static final double LON = 21.272508;
 
     public double getBrusselsTemperature() {
         Map<String, Object> response = webClient.get()
